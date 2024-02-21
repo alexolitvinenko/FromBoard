@@ -1,0 +1,476 @@
+.main {
+	margin-top: 50px;
+}
+.hero {
+	display: flex;
+	justify-content: space-between;
+	gap: 25px;
+
+	@media screen and (max-width: $desktop) {
+		flex-wrap: wrap;
+		row-gap: 40px;
+		column-gap: 15px;
+	}
+}
+.no-problem {
+	flex: 0 0 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+
+	@media screen and (max-width: $desktop) {
+		flex: 1 1 100%;
+	}
+
+	&__text-block {
+		width: 100%;
+
+		@media screen and (max-width: $desktop) {
+			width: calc(100% / 2 - 15px / 2 * (2 - 1));
+		}
+		@media screen and (max-width: $laptop) {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+
+		@media screen and (max-width: $mobile) {
+			font-size: 30px;
+		}
+
+	}
+
+	&__big-text {
+		margin-top: 15px;
+	}
+
+	&__img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 16px;
+
+		@media screen and (max-width: $desktop) {
+			width: calc(100% / 2 - 15px / 2 * (2 - 1));
+			height: 100%;
+		}
+		@media screen and (max-width: $laptop) {
+			width: 100%;
+			height: 350px;
+		}
+	}
+}
+.calculator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1 1 50%;
+	min-height: 100%;
+	padding: 25px;
+	background-color: $gray-50;
+	border-radius: 16px;
+	text-align: center;
+
+	@media screen and (max-width: $desktop) {
+		flex: 1 1 100%;
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__form {
+		width: 100%;
+		max-width: 470px;
+		margin: 30px auto 0;
+
+		@media screen and (max-width: $desktop) {
+			max-width: 580px;
+		}
+		@media screen and (max-width: $laptop) {
+			max-width: 570px;
+		}
+	}
+}
+.calculator-form {
+	--cols: 2;
+	--gap: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+
+	&__input {
+		flex: 0 0 calc(100% / var(--cols) - var(--gap) / var(--cols) * (var(--cols) - 1));
+
+		@media screen and (max-width: $mobile) {
+			flex: 1 1 100%;
+		}
+
+		&_full-width {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__select:invalid {
+		color: $gray-400;
+
+		& option {
+			color: $gray-900;
+		}
+	}
+	
+	&__submit {
+		width: 100%;
+		padding: 10px 30px;
+	}
+}
+.benefits {
+
+	&__title {
+		text-align: center;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+		margin-top: 25px;
+
+		@media screen and (max-width: $pad) {
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		flex: 0 0 calc(100% / 3 - 25px / 3 * (3 - 1));
+
+		@media screen and (max-width: $desktop) {
+			flex: 0 0 calc(100% / 2 - 25px / 2 * (2 - 1));
+		}
+		@media screen and (max-width: $pad) {
+			flex: 0 0 100%;
+			max-width: 370px;
+		}
+	}
+}
+.benefit {
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+	padding: 25px;
+
+	@media screen and (max-width: $pad) {
+		padding: 0
+	}
+
+	&__img {
+		@media screen and (max-width: $laptop) {
+			width: 100%;
+			max-width: 100px;
+		}
+	}
+
+	&__info {
+	}
+
+	&__title {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 32px;
+
+		@media screen and (max-width: $laptop) {
+			font-size: 20px;
+			line-height: 28px
+		}
+	}
+
+	&__text {
+		margin-top: 15px;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+	}
+}
+.guarantees {
+
+	&__title {
+		text-align: center;
+	}
+
+	&__text {
+		max-width: 756px;
+		margin: 15px auto 0;
+		text-align: center;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+		margin-top: 25px;
+
+		@media screen and (max-width: $pad) {
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		flex: 0 0 calc(100% / 4 - 25px / 4 * (4 - 1));
+
+		@media screen and (max-width: $desktop) {
+			flex: 0 0 calc(100% / 2 - 25px / 2 * (2 - 1));
+		}
+		@media screen and (max-width: $pad) {
+			flex: none;
+			width: 100%;
+			max-width: 370px;
+		}
+
+		&_hidden {
+			display: none;
+		}
+	}
+
+	&__more-btn {
+		padding: 15px 30px;
+		margin: 50px auto 0;
+		
+		&_hidden {
+			display: none;
+		}
+	}
+}
+.garanty {
+	text-align: center;
+
+	&__img {
+		max-width: 100%;
+	}
+
+	&__title {
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 28px;
+
+		@media screen and (max-width: $mobile) {
+			font-size: 14px;
+		}
+	}
+}
+.reviews {
+	position: relative;
+
+	@media screen and (max-width: $mobile) {
+		padding-bottom: 75px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__slider {
+		position: static;
+		padding-left: 135px;
+		padding-right: 135px;
+		margin-top: 35px;
+
+		@media screen and (max-width: $desktop) {
+			padding-left: 95px;
+			padding-right: 95px;
+		}
+		@media screen and (max-width: $mobile) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		& .slick-track{
+			display: flex;
+		}
+		&  .slick-slide {
+			margin: 0 calc(25px / 2);
+		}
+		& .slick-list {
+			margin: 0 -calc(25px / 2);
+		}
+		& .slick-arrow {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 60px;
+			height: 60px;
+			margin: auto;
+			font-size: 0;
+			background-color: transparent;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			border: none;
+			cursor: pointer;
+			z-index: 10;
+			
+			@media screen and (max-width: $mobile) {
+				top: initial;
+				bottom: 0;
+			}
+
+			&.slick-prev {
+				left: 25px;
+				background-image: url('../img/arrow-prev.svg');
+
+				@media screen and (max-width: $desktop) {
+					left: 0;
+				}
+			}
+			&.slick-next {
+				right: 25px;
+				background-image: url('../img/arrow-next.svg');
+
+				@media screen and (max-width: $desktop) {
+					right: 0;
+				}
+			}
+		}
+	}
+
+	&__item {
+		height: auto;
+	}
+}
+.review {
+	position: relative;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 10px;
+	padding: 30px;
+	background-color: $gray-50;
+	border-radius: 16px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+		width: 75px;
+		height: 75px;
+		background-image: url('../img/quotes.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		@media screen and (max-width: $desktop) {
+			bottom: 5px;
+			right: 25px;
+		}
+		@media screen and (max-width: $laptop) {
+			bottom: 10px;
+			right: 15px;
+		}
+		@media screen and (max-width: $pad) {
+			bottom: 15px;
+			right: 20px;
+		}
+	}
+
+	&__text {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 32px;
+		color: $gray-900;
+
+		@media screen and (max-width: $desktop) {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+
+	&__name {
+		display: block;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 32px;
+		color: $gray-500;
+
+		@media screen and (max-width: $desktop) {
+			font-size: 16px;
+			line-height: 24px
+		}
+	}
+}
+.question {
+	padding: 65px;
+	background-color: $gray-50;
+	border-radius: 16px;
+
+	@media screen and (max-width: $mobile) {
+		padding: 25px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__form {
+		margin: 30px auto 0;
+	}
+}
+.question-form {
+	max-width: 500px;
+	--cols: 2;
+	--gap: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+
+	&__input {
+		flex: 0 0 calc(100% / var(--cols) - var(--gap) / var(--cols) * (var(--cols) - 1));
+
+		@media screen and (max-width: $mobile) {
+			flex: 1 1 100%;
+		}
+
+		&_full-width {
+			flex: 1 1 100%;
+		}
+	}
+	&__textarea {
+
+		&_full-width {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__submit {
+		width: 100%;
+		padding: 10px 30px;
+	}
+}
+
+.mtb70 {
+	margin-top: 70px;
+	margin-bottom: 70px;
+
+	@media screen and (max-width: $desktop) {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+.input {
+	padding: 12px;
+	border-radius: 4px;
+	border: 2px solid $gray-900;
+
+	&::placeholder {
+		color: $gray-400;
+	}
+}

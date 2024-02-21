@@ -1,0 +1,169 @@
+.footer {
+	margin-top: 70px;
+	padding: 40px 0;
+	background-color: $gray-900;
+
+	&__container {
+		@media screen and (max-width: $desktop) {
+			max-width: calc(1160px + $container_padding * 2)
+		}
+	}
+
+	&__top-block {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $laptop) {
+			flex-wrap: wrap;
+			row-gap: 25px;
+		}
+		@media screen and (max-width: $pad) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__logo-block {
+
+		@media screen and (max-width: $laptop) {
+			order: 1;
+		}
+		@media screen and (max-width: $pad) {
+			order: 2;
+			text-align: center;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: $laptop) {
+			order: 0;
+			flex: 1 1 100%;
+			justify-content: center;
+		}
+	}
+
+	&__menu {
+	}
+
+	&__link {
+		color: $gray-50;
+		text-decoration: none;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media screen and (max-width: $laptop) {
+			order: 2;
+		}
+		@media screen and (max-width: $pad) {
+			order: 1;
+		}
+	}
+
+	&__copyright {
+		margin-top: 10px;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px;
+		color: $gray-50;
+	}
+
+	&__bottom-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 25px;
+
+		@media screen and (max-width: $laptop) {
+			flex-wrap: wrap;
+			justify-content: center;
+			row-gap: 10px;
+		}
+	}
+
+	&__text {
+		flex-grow: 1;
+		flex-shrink: 1;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 16px;
+		color: $gray-600;
+
+		@media screen and (max-width: $laptop) {
+			text-align: center;
+		}
+	}
+
+	&__authors {
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		@media screen and (max-width: $laptop) {
+			text-align: center;
+		}
+	}
+
+	&__author {
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px;
+		color: $gray-500;
+
+		&:not(:first-of-type) {
+			margin-top: 5px;
+		}
+	}
+
+	&__author-link {
+		display: block;
+		color: inherit;
+		text-decoration: underline;
+		
+		@media screen and (max-width: $laptop) {
+			display: inline-block;
+		}
+		@media screen and (max-width: $mobile) {
+			display: block;
+		}
+	}
+}
+.logo {
+
+	&__img {
+	}
+
+	&__text {
+
+		&_white {
+		}
+	}
+}
+.nav {
+}
+.menu {
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.info {
+
+	&__phone {
+	}
+
+	&__big-text {
+	}
+}
+.big-text {
+}

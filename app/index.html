@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./_head.html',{
+		"title": "FromBoard Delivery",
+	})
+</head>
+<body>
+	@@include('./_header.html')
+	<main class="main container">
+		<section class="hero">
+			<section class="no-problem">
+				<div class="no-problem__text-block">
+					<h1 class="no-problem__title title">Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h1>
+					<p class="no-problem__big-text big-text">Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать товары со всего мира и получать их в России</p>
+				</div>
+				<img src="img/no-problem__img.jpg" alt="" class="no-problem__img">
+			</section>
+			<section class="calculator" id="calculator">
+				<h2 class="calculator__title">Калькулятор доставки</h2>
+				<p class="calculator__text text">Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
+				<form action="" class="calculator__form calculator-form" method="post">
+					<input class="calculator-form__input calculator-form__input_full-width input" name="name" placeholder="Имя" required type="text">
+					<input class="calculator-form__input input" name="email" placeholder="Почта" required type="email">
+					<input class="calculator-form__input input" name="phone" placeholder="Телефон" required type="tel">
+					<input class="calculator-form__input input" name="area" placeholder="Общая площадь, м²" required type="number">
+					<input class="calculator-form__input input" name="weight" placeholder="Вес, кг" required type="number">
+					<select class="calculator-form__input calculator-form__select input" name="purchase_country" id="purchase_country" placeholder="Страна покупки" required>
+						<option class="calculator-form__dis-option" value="" disabled selected hidden>Страна покупки</option>
+						<option value="Китай">Китай</option>
+						<option value="США">США</option>
+						<option value="Германия">Германия</option>
+					</select>
+					<input class="calculator-form__input input" name="purchase_city" placeholder="Город покупки" required type="text">
+					<input class="calculator-form__input input" name="delivery_area" placeholder="Область доставки" required type="text">
+					<input class="calculator-form__input input" name="delivery_city" placeholder="Город доставки" required type="text">
+					<button class="calculator-form__submit main-btn" type="submit">Заказать расчёт</button>
+				</form>
+			</section>
+		</section>
+		<section class="benefits mtb70" id="benefits">
+			<h2 class="benefits__title title">Наши преимущества</h2>
+			<div class="benefits__row">
+				<article class="benefits__item benefit">
+					<img src="img/benefit__img-1.svg" alt="" class="benefit__img">
+					<div class="benefit__info">
+						<h3 class="benefit__title">Растоможка груза</h3>
+						<p class="benefit__text">Мы берём на себя все формальности и бумажную волокиту, связанную с растаможкой груза</p>
+					</div>
+				</article>
+				<article class="benefits__item benefit">
+					<img src="img/benefit__img-2.svg" alt="" class="benefit__img">
+					<div class="benefit__info">
+						<h3 class="benefit__title">Надёжная упаковка</h3>
+						<p class="benefit__text">Все товары упаковываются нашими специалистами с особым вниманием к деталям, гарантируя, что они дойдут в безопасности и в отличном состоянии</p>
+					</div>
+				</article>
+				<article class="benefits__item benefit">
+					<img src="img/benefit__img-3.svg" alt="" class="benefit__img">
+					<div class="benefit__info">
+						<h3 class="benefit__title">Быстро и выгодно</h3>
+						<p class="benefit__text">Мы предлагаем быструю и выгодную доставку, чтобы вы могли насладиться покупками как можно скорее</p>
+					</div>
+				</article>
+				<article class="benefits__item benefit">
+					<img src="img/benefit__img-4.svg" alt="" class="benefit__img">
+					<div class="benefit__info">
+						<h3 class="benefit__title">Удобный сервис</h3>
+						<p class="benefit__text">Стремимся сделать процесс доставки максимально удобным для вас, чтобы опыт остался приятным и беззаботным</p>
+					</div>
+				</article>
+				<article class="benefits__item benefit">
+					<img src="img/benefit__img-5.svg" alt="" class="benefit__img">
+					<div class="benefit__info">
+						<h3 class="benefit__title">Прозрачность работы</h3>
+						<p class="benefit__text">Мы предоставляем полный контроль над каждым этапом доставки, от момента заказа до момента прибытия заказа</p>
+					</div>
+				</article>
+				<article class="benefits__item benefit">
+					<img src="img/benefit__img-6.svg" alt="" class="benefit__img">
+					<div class="benefit__info">
+						<h3 class="benefit__title">Страхование груза</h3>
+						<p class="benefit__text">Наше страхование обеспечивает полную защиту и покрытие почти все неприятные и неожиданные ситуации</p>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="guarantees mtb70" id="guarantees">
+			<h3 class="guarantees__title title">Гарантии качества</h3>
+			<p class="guarantees__text text">Наши гарантии качества включают в себя полный спектр документов, необходимых для ввоза и вывоза товаров, а также для успешного бизнеса на мировом рынке. Мы предоставляем вам надёжность и уверенность</p>
+			<div class="guarantees__row">
+				<article class="guarantees__item garanty">
+					<img src="img/garanty__img-1.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в РФ</h3>
+				</article>
+				<article class="guarantees__item garanty">
+					<img src="img/garanty__img-2.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в США</h3>
+				</article>
+				<article class="guarantees__item garanty">
+					<img src="img/garanty__img-3.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в Китае</h3>
+				</article>
+				<article class="guarantees__item garanty">
+					<img src="img/garanty__img-4.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в Великобритнии</h3>
+				</article>
+				<article class="guarantees__item guarantees__item_hidden garanty">
+					<img src="img/garanty__img-1.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в РФ</h3>
+				</article>
+				<article class="guarantees__item guarantees__item_hidden garanty">
+					<img src="img/garanty__img-2.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в США</h3>
+				</article>
+				<article class="guarantees__item guarantees__item_hidden garanty">
+					<img src="img/garanty__img-3.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в Китае</h3>
+				</article>
+				<article class="guarantees__item guarantees__item_hidden garanty">
+					<img src="img/garanty__img-4.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в Великобритнии</h3>
+				</article>
+				<article class="guarantees__item guarantees__item_hidden garanty">
+					<img src="img/garanty__img-4.png" alt="" class="garanty__img">
+					<h3 class="garanty__title">Свидетельство о регистрации в Великобритнии</h3>
+				</article>
+			</div>
+			<button class="guarantees__more-btn main-btn">Показать больше документов</button>
+		</section>
+		<section class="reviews mtb70" id="reviews">
+			<h2 class="reviews__title title">Отзывы</h2>
+			<div class="reviews__slider">
+				<article class="reviews__item review">
+					<p class="review__text">Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</p>
+					<span class="review__name">Анна</span>
+				</article>
+				<article class="reviews__item review">
+					<p class="review__text">Я уже несколько лет заказываю дизайнерскую одежду из Франции через ваш сервис, и он никогда меня не подводил. Важно иметь надёжную компанию, которая позаботится о вашем заказе и предоставит все необходимые документы для ввоза в Россию</p>
+					<span class="review__name">Алексей</span>
+				</article>
+				<article class="reviews__item review">
+					<p class="review__text">Заказал шикарные часы из Швейцарии, и доставка была невероятно быстрой. Ваш сервис делает интернет-шоппинг более доступным и удобным</p>
+					<span class="review__name">Игорь</span>
+				</article>
+				<article class="reviews__item review">
+					<p class="review__text">Ваш сервис действительно изменил мой способ покупок. Я больше не переживаю о таможенных вопросах и документах - все у вас в порядке. Спасибо за ваше качество и надежность</p>
+					<span class="review__name">Екатерина</span>
+				</article>
+				<article class="reviews__item review">
+					<p class="review__text">Я заказал редкий антикварный предмет из Японии через ваш сервис, и остался впечатлен. Все пришло в отличном состоянии, и ваша гарантия качества действительно работает. Спасибо за ваше профессиональное обслуживание</p>
+					<span class="review__name">Дмитрий</span>
+				</article>
+			</div>
+		</section>
+		<section class="question">
+			<h2 class="question__title title">Остались вопросы?</h2>
+			<form action="" class="question__form question-form">
+				<input class="question-form__input input" name="name" placeholder="Имя" required type="text">
+				<input class="question-form__input input" name="email" placeholder="Почта" type="email">
+				<input class="question-form__input input" name="phone" placeholder="Телефон" required type="tel">
+				<input class="question-form__input input" name="theme" placeholder="Тема вопроса" type="text">
+				<textarea class="question-form__textarea question-form__textarea_full-width input" name="message" placeholder="Сообщение..." type="text"></textarea>
+				<button class="question-form__submit main-btn" type="submit">Оставить заявку</button>
+			</form>
+		</section>
+	</main>
+	@@include('./_footer.html')
+
+	<div class="overlay"></div>
+	<div class="success-modal">
+		<button class="success-modal__close-btn">	
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4L14.6 16L8 22.6L9.4 24L16 17.4L22.6 24L24 22.6L17.4 16L24 9.4Z" fill="#333333"></path>
+			</svg>
+		</button>
+		<p class="success-modal__text"></p>
+		<button class="success-modal__btn main-btn">Хорошо</button>
+	</div>
+
+	<link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" />
+	<script src="https:///www.cbr-xml-daily.ru/daily_jsonp.js" async></script>
+	<script type="text/javascript" src="js/app.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
